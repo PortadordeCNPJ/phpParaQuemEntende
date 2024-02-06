@@ -1,9 +1,12 @@
 {
     "name": "guilherme.muller2/php-para-quem-entende",
     "autoload": {
-        "files": {
-            "app/functions/custom.php"
-        },
+
+        "files": [
+            "app/functions/custom.php",
+            "app/functions/pages.php",
+            "app/functions/validate.php"
+        ],
 
         "psr-4": {
             "GuilhermeMuller2\\PhpParaQuemEntende\\": "src/",
