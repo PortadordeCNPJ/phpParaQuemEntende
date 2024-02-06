@@ -1,0 +1,20 @@
+{
+    "name": "guilherme.muller2/php-para-quem-entende",
+    "autoload": {
+        "files": {
+            "app/functions/custom.php"
+        },
+
+        "psr-4": {
+            "GuilhermeMuller2\\PhpParaQuemEntende\\": "src/",
+            "app\\" : "/app"
+        }
+    },
+    "authors": [
+        {
+            "name": "PortadordeCNPJ",
+            "email": "guilhermedesouzamuller@gmail.com"
+        }
+    ],
+    "require": {}
+}
