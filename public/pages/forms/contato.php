@@ -17,5 +17,16 @@ $validate = validate([
     'message' => 's',
 ]);
 
+$data = [
+    'quem' => $validade->email,
+    'para' => 'guilhermestarfs@gmail.com',
+    'mensagem' => $validate->message,
+    'assunto' => $validate->subject,
+];
 
-dd($validate->name);
+if (send($data)){
+
+    flash('message', 'Email Enviado com sucesso','success');
+
+    return redirect("contato");
+}
