@@ -17,6 +17,8 @@ $validate = validate([
     'message' => 's',
 ]);
 
+
+
 $data = [
     'quem' => $validade->email,
     'para' => 'guilhermestarfs@gmail.com',
