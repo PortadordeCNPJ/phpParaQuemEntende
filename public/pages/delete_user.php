@@ -5,11 +5,10 @@ $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 $deletado = delete('users', 'id', $id);
 
+if($deletado) {
+    return redirectToHome();
+}
 
-// if($deletado) {
-//     return redirectToHome();
-// }
 
-
-// flash('Message','Erro ao deletar');
-// redirectToHome();
+flash('message','Erro ao deletar');
+redirectToHome();

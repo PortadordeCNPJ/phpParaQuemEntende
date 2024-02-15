@@ -3,6 +3,7 @@
 <h2>inicial page</h2>
 
 <?= get('message'); ?>
+
 <table class="table table-striped table-hover">
     <thead>
         <tr>
@@ -14,7 +15,7 @@
     <tbody>
         <?php 
             $users = all('users');
-            foreach($users as $user);
+            foreach($users as $user) :
         ?>
         <tr>
             <td><?= $user->id; ?></td>
@@ -28,5 +29,6 @@
                 <a href="?page=delete_user&id=<?= $user->id; ?>" class="btn btn-danger">Deletar</a>
             </td>
         </tr>
+        <?php endforeach ?>
     </tbody>
 </table>
